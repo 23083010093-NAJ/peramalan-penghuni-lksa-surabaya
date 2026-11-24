@@ -1,0 +1,3 @@
+seri,n,adf_statistik,adf_p_value,kpss_statistik,kpss_p_value,interpretasi
+Data level,22,2.4906586715360626,0.9990467763146905,0.19871152737853176,0.1,Belum konklusif/hasil kedua uji belum memberi bukti yang tegas
+First difference,21,-3.4525710129724305,0.009292067304864322,0.1259882850022502,0.1,"Konsisten dengan stasioner (ADF menolak unit root; KPSS tidak menolak stasioneritas)"

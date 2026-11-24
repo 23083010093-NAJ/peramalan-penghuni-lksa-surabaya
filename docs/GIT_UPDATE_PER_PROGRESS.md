@@ -15,13 +15,25 @@ git push origin main
 Ganti `PATH_FILE_ATAU_FOLDER` dengan path berkas yang benar-benar dibuat. Jangan menjalankan `git add .` apabila ada file lokal yang tidak ingin diunggah.
 
 ## Progress 1 — Eksplorasi Data dan Uji Stasioneritas
-Contoh file yang dapat ditambahkan setelah dibuat:
+
+File Progress 1 yang saat ini sudah ada di repository:
+- `src/progress_1_eksplorasi_stasioneritas.py`
+- `src/_common.py`
+- `docs/PROGRESS_1_EKSPLORASI_STASIONERITAS.md`
+- `output/data_bulanan_panti_asuhan.csv`
+- `output/p1_hasil_adf_kpss.csv`
+
+Untuk mengunggah perubahan lanjutan Progress 1 dari komputer lokal:
 ```powershell
-git add notebooks/progress_1_eksplorasi.ipynb
-git add src/progress_1/
-git commit -m "analysis: add data exploration and stationarity tests"
+git add src/_common.py src/progress_1_eksplorasi_stasioneritas.py
+git add docs/PROGRESS_1_EKSPLORASI_STASIONERITAS.md
+git add output/data_bulanan_panti_asuhan.csv output/p1_hasil_adf_kpss.csv
+git add data/raw/07-panti-asuhan-per-kecamatan.csv
+git commit -m "analysis: update progress 1 exploration and stationarity"
 git push origin main
 ```
+
+Catatan: file CSV mentah belum ada di GitHub. Perintah terakhir hanya berhasil jika file sudah diunduh dan tersedia di path tersebut. Pastikan ketentuan sumber data mengizinkan distribusi salinan sebelum mengunggahnya.
 
 ## Progress 2 — Deskripsi dan Karakteristik Dataset
 ```powershell

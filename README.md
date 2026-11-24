@@ -2,7 +2,7 @@
 
 Repository ini disiapkan sebagai kerangka awal proyek analisis data dan peramalan jumlah penghuni Lembaga Kesejahteraan Sosial Anak (LKSA) di Kota Surabaya.
 
-Pada tahap awal, repository memuat struktur proyek dan dokumentasi setup. Kode analisis, notebook, metode, evaluasi, visualisasi, serta hasil setiap tahap pekerjaan akan ditambahkan secara bertahap setelah repository awal dibuat.
+Progress 1 sudah ditambahkan, meliputi eksplorasi awal, pembersihan duplikasi identik, agregasi bulanan, visualisasi, serta uji ADF dan KPSS. Progress 2–6 akan ditambahkan secara bertahap.
 
 ## Tujuan umum
 
@@ -75,7 +75,7 @@ jupyter notebook
 
 Git, GitHub, dan Visual Studio Code merupakan perangkat pengembangan terpisah dan tidak dipasang melalui pip.
 
-## Panduan GitHub
+## Progress 1 — Eksplorasi dan Stasioneritas\n\n- Script: `src/progress_1_eksplorasi_stasioneritas.py`\n- Helper bersama: `src/_common.py`\n- Dokumentasi: `docs/PROGRESS_1_EKSPLORASI_STASIONERITAS.md`\n- Deret waktu agregat: `output/data_bulanan_panti_asuhan.csv`\n- Hasil ADF/KPSS: `output/p1_hasil_adf_kpss.csv`\n\nUntuk menjalankan dari direktori utama repository: `python src/progress_1_eksplorasi_stasioneritas.py`. Script akan menghasilkan grafik PNG dan SVG di folder `output/`.\n\n## Panduan GitHub
 
 - [Setup upload pertama kali](docs/GIT_FIRST_UPLOAD_SETUP.md)
 - [Workflow Git umum](docs/GIT_WORKFLOW_GENERAL.md)
@@ -88,4 +88,4 @@ Sebelum melakukan commit, periksa file yang akan diunggah. Jangan memasukkan pas
 
 ## Status repository
 
-**Tahap:** Project starter. Belum berisi implementasi analisis, pemodelan, evaluasi, maupun hasil eksperimen. Enam progress penelitian akan ditambahkan secara bertahap.
+**Tahap:** Progress 1 sudah diunggah. Progress 2–6 belum diunggah. File CSV mentah belum berada di repository; unduh dari Satu Data Surabaya dan simpan ke `data/raw/07-panti-asuhan-per-kecamatan.csv` sebelum menjalankan script.
